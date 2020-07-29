@@ -36,8 +36,9 @@ class AssignmentController extends Controller
         $i=0;
         while($i<5){
             $result = explode("/", $matches[$i]);
+            // logger($result);
             if(!empty($result)) {
-                array_push($res, [ 'title' => strip_tags($matches[$i]), 'link' => "https://time.com/$matches[1]/$matches[2]/" ]);
+                array_push($res, [ 'title' => strip_tags($matches[$i]), 'link' => "https://time.com/$result[1]/$result[2]/" ]);
                 $i++;
             }
         }

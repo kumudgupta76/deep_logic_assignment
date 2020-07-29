@@ -19,4 +19,4 @@ Route::get('/hi', function(){
     return "hi";
 });
 
-Route::get('/hI', 'AssignmentController@assignment');
+Route::get('/getTimeStories', 'AssignmentController@assignment');
